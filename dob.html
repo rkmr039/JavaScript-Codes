@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <script type="text/javascript">
+            function getDay()
+            {
+                var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+                var dob = document.getElementById('dobInput').value;
+                var d = new Date(dob);
+                //document.write(days[d.getDay()]);
+                document.getElementById('txtDay').value = days[d.getDay()].toString();
+            } 
+        </script>
+        
+    </head>
+    <body>
+            <input type="date" name="enter" id="dobInput"  />
+            <input type="button" value="click" id="dobBtn" onclick="getDay()" />
+            <input type="text" id="txtDay" />
+  
+    </body>
+</html>
